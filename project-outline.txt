@@ -1,0 +1,68 @@
+Name and Title
+  Spencer Lee
+  Software Engineer
+
+Links
+  GitHub
+    https://github.com/Spencer-J-Lee
+  LinkedIn
+    https://www.linkedin.com/in/spenjlee/
+  Codepen
+    https://codepen.io/MisterJibbs
+    
+About Me
+  ...
+
+Experience
+  Software Engineer - Moov Technologies Inc.
+    2022-2024
+    [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Redux",
+      "Golang",
+      "PostgreSQL",
+      "Jest",
+      "React Testing Library",
+      "TailwindCSS",
+      "Material-UI",
+      "Storybook",
+      "Looker",
+    ]
+
+  Junior Software Engineer - Moov Technologies Inc.
+    2020-2022
+    [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Redux",
+      "Ember.js",
+      "Golang",
+      "PostgreSQL",
+      "Jest",
+      "React Testing Library",
+      "TailwindCSS",
+      "Bootstrap",
+      "Material-UI",
+      "Contentful",
+      "Metabase",
+    ]
+
+  Software Engineer Intern - Moov Technologies Inc.
+    2020
+    [
+      "JavaScript",
+      "React",
+      "Redux",
+      "Ember.js",
+      "Golang",
+      "SASS",
+      "Styled Components",
+      "Bootstrap",
+    ]
+
+Projects
