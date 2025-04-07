@@ -7,12 +7,20 @@ import clsx from "clsx";
 
 export const Navbar = () => {
   const [show, setShow] = useState(true);
+  const [minify, setMinify] = useState(false);
   const prevPos = useRef(0);
 
   const handleScroll = () => {
     const currPos = window.scrollY;
-    setShow(currPos < prevPos.current || currPos < 50);
+    const nextShow = currPos < prevPos.current || currPos < 80;
+    setShow(nextShow);
     prevPos.current = currPos;
+
+    if (nextShow === false) {
+      setMinify(true);
+    } else if (currPos === 0) {
+      setMinify(false);
+    }
   };
 
   useEffect(() => {
@@ -23,16 +31,20 @@ export const Navbar = () => {
   return (
     <header
       className={clsx(
-        "fixed top-0 w-full bg-background/90 backdrop-blur-xs transition-transform",
+        "fixed top-0 w-full bg-background/90 px-11 backdrop-blur-xs transition-all",
         {
           "translate-y-0": show,
           "-translate-y-full": !show,
         },
+        {
+          "py-2": minify,
+          "py-5": !minify,
+        },
       )}
     >
-      <nav className="flex items-center justify-between gap-10 px-11 py-5">
+      <nav className="flex items-center justify-between gap-10">
         <Image
-          src="/vercel.svg"
+          src="/vercel.svg" // TODO
           alt="logo" // TODO
           style={{ objectFit: "contain" }}
           width={40}
