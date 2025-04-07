@@ -2,12 +2,12 @@
 
 @theme {
   --color-background: #0e0f1c;
-  --color-primary: #4c00ff;
-  --color-accent: #3b82f6;
-  --color-highlight: #7c3aed;
-  --color-text: #f4f4f5;
-  --color-muted: #a1a1aa;
-  --color-border: #27272a;
+  --color-primary: #f8f9fa;
+  --color-accent: #5a67cd;
+  --color-muted: #a0a3b1;
+  --color-highlight: #7a85e5;
+  --color-border: #2a2d3a;
+  --color-success: #3ddc97;
 
   --spacing-screen-xl: 1280px;
 }
