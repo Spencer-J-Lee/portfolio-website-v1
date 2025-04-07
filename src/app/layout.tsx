@@ -1,22 +1,13 @@
 import type { Metadata } from "next";
-import { Inter, IBM_Plex_Mono } from "next/font/google";
-import "../css/reset.css";
-import "../css/globals.css";
-import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { Navbar } from "@/components/navbar/Navbar";
 import { SocialLinks } from "@/components/SocialLinks";
-config.autoAddCss = false;
+import { inter, IBMPlexMono } from "@/styles/fonts";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
-const IBMPlexMono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  weight: ["400", "600"],
-  variable: "--font-ibm-plex-mono",
-});
+import "../styles/reset.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import "../styles/globals.css";
+config.autoAddCss = false;
 
 export const metadata: Metadata = {
   title: "Spencer Lee",
@@ -31,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${IBMPlexMono.variable} scroll-smooth bg-background font-inter text-primary antialiased`}
+        className={`${inter.variable} ${IBMPlexMono.variable} bg-background font-inter text-primary scroll-smooth antialiased`}
       >
         <Navbar />
         <SocialLinks />
