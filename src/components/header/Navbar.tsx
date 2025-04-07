@@ -1,4 +1,4 @@
-export const Nav = () => {
+export const Navbar = () => {
   return (
     <nav>
       <ul>
