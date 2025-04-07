@@ -5,6 +5,7 @@ import { NavbarLink } from "./NavbarLink";
 import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 import Link from "next/link";
+import { SECTIONS } from "@/constants/sections";
 
 export const Navbar = () => {
   const [show, setShow] = useState(true);
@@ -44,7 +45,7 @@ export const Navbar = () => {
       )}
     >
       <nav className="flex items-center justify-between gap-10">
-        <Link href="/">
+        <Link href={SECTIONS.HOME}>
           <Image
             src="/assets/logo.png"
             alt="Logo of initials SL"
@@ -55,13 +56,13 @@ export const Navbar = () => {
         </Link>
         <ul className="flex items-center justify-between gap-1">
           <li>
-            <NavbarLink href="#about">About</NavbarLink>
+            <NavbarLink href={`#${SECTIONS.ABOUT}`}>About</NavbarLink>
           </li>
           <li>
-            <NavbarLink href="#experience">Experience</NavbarLink>
+            <NavbarLink href={`#${SECTIONS.EXPERIENCE}`}>Experience</NavbarLink>
           </li>
           <li>
-            <NavbarLink href="#projects">Projects</NavbarLink>
+            <NavbarLink href={`#${SECTIONS.PROJECTS}`}>Projects</NavbarLink>
           </li>
         </ul>
       </nav>

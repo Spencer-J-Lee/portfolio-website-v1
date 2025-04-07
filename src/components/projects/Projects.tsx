@@ -2,10 +2,11 @@ import Image from "next/image";
 import { Pill } from "../common/Pill";
 import { Section } from "../common/Section";
 import { projectData } from "./data";
+import { SECTIONS } from "@/constants/sections";
 
 export const Projects = () => {
   return (
-    <Section id="project" title="Project">
+    <Section id={SECTIONS.PROJECTS} title="Projects">
       <ul>
         {projectData.map(({ image, link, title, description, skills }) => (
           <li key={title}>
