@@ -4,6 +4,7 @@ import Image from "next/image";
 import { NavbarLink } from "./NavbarLink";
 import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
+import Link from "next/link";
 
 export const Navbar = () => {
   const [show, setShow] = useState(true);
@@ -43,13 +44,15 @@ export const Navbar = () => {
       )}
     >
       <nav className="flex items-center justify-between gap-10">
-        <Image
-          src="/vercel.svg" // TODO
-          alt="logo" // TODO
-          style={{ objectFit: "contain" }}
-          width={40}
-          height={40}
-        />
+        <Link href="/">
+          <Image
+            src="/assets/duck.png" // TODO
+            alt="logo" // TODO
+            style={{ objectFit: "contain" }}
+            width={40}
+            height={40}
+          />
+        </Link>
         <ul className="flex items-center justify-between gap-1">
           <li>
             <NavbarLink href="#about">About</NavbarLink>
