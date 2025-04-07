@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { ScrollAnchor } from "./ScrollAnchor";
 
 interface SectionProps {
   title: string;
@@ -8,9 +9,12 @@ interface SectionProps {
 
 export const Section = ({ title, children, id }: SectionProps) => {
   return (
-    <section id={id}>
-      <h4 className="text-4xl font-semibold">{title}</h4>
-      {children}
-    </section>
+    <>
+      {id && <ScrollAnchor id={id} />}
+      <section>
+        <h4 className="text-4xl font-semibold">{title}</h4>
+        {children}
+      </section>
+    </>
   );
 };
