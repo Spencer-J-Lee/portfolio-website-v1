@@ -12,7 +12,7 @@ export const Hero = () => {
         <h3 className="text-muted mt-5 text-6xl font-bold">
           I build digital experiences.
         </h3>
-        <p className="text-muted ml-0.5 mt-8 max-w-[540px]">
+        <p className="text-muted ml-0.5 mt-8 max-w-[510px] leading-relaxed">
           I'm a software engineer who specializes in creating accessible,
           pixel-perfect interfaces. I'm obsessed with craftsmanship, always
           aiming for that perfect blend of performance, usability, and design.
