@@ -2,7 +2,7 @@ import { Section } from "./common/Section";
 
 export const About = () => {
   return (
-    <Section id="#about" title="About">
+    <Section id="about" title="About">
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
         aspernatur cupiditate fuga ipsam tempore eaque dolore rerum ratione,

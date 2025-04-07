@@ -5,7 +5,7 @@ import { experienceData } from "./data";
 
 export const Experience = () => {
   return (
-    <Section id="#experience" title="Experience">
+    <Section id="experience" title="Experience">
       <ul>
         {experienceData.map(
           ({ title, company, description, dateStr, link, skills }) => (
