@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./css/reset.css";
-import "./css/globals.css";
+import "../css/reset.css";
+import "../css/globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import { Header } from "@/components/header/Header";
+import { SocialLinks } from "@/components/header/SocialLinks";
 config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,8 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased bg-background text-text`}
+        className={`${inter.className} bg-background text-text antialiased`}
       >
+        <Header />
+        <SocialLinks />
         {children}
       </body>
     </html>

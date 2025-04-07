@@ -1,20 +1,18 @@
-import { Header } from "@/components/header";
-import { About } from "@/components/about";
+import { About } from "@/components/about/About";
 import { Experience } from "@/components/experience";
 import { Projects } from "@/components/projects";
+import { Hero } from "@/components/hero";
 
 export default function Home() {
   return (
-    <div className="m-auto flex max-w-screen-xl justify-between gap-10">
-      <Header />
+    <main id="content" className="m-auto max-w-screen-xl px-20">
+      <Hero />
 
-      <main id="content">
-        <About />
+      <About />
 
-        <Experience />
+      <Experience />
 
-        <Projects />
-      </main>
-    </div>
+      <Projects />
+    </main>
   );
 }
