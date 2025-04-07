@@ -5,7 +5,7 @@ import { projectData } from "./data";
 
 export const Projects = () => {
   return (
-    <Section id="#project" title="Project">
+    <Section id="project" title="Project">
       <ul>
         {projectData.map(({ image, link, title, description, skills }) => (
           <li key={title}>
