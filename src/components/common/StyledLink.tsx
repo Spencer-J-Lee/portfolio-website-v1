@@ -2,7 +2,7 @@ import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
 import Link from "next/link";
-import type { ComponentPropsWithoutRef, ReactNode } from "react";
+import type { ComponentPropsWithoutRef } from "react";
 
 type StyledLinkProps = ComponentPropsWithoutRef<typeof Link> & {
   external?: boolean;
@@ -17,7 +17,7 @@ export const StyledLink = ({
 }: StyledLinkProps) => {
   const finalClassName = clsx(
     "font-medium hover:text-accent text-text transition-colors",
-    className
+    className,
   );
 
   if (external) {
@@ -29,9 +29,9 @@ export const StyledLink = ({
         rel="noopener noreferrer"
         {...props}
       >
-        {children}
+        {children}{" "}
         <span>
-          <FontAwesomeIcon icon={faUpRightFromSquare} />
+          <FontAwesomeIcon icon={faUpRightFromSquare} size="xs" />
         </span>
       </a>
     );
