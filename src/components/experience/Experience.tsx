@@ -28,7 +28,7 @@ export const Experience = () => {
                 </div>
               </div>
             </li>
-          )
+          ),
         )}
       </ul>
     </Section>
