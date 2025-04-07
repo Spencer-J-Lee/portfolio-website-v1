@@ -4,7 +4,7 @@ import "../css/reset.css";
 import "../css/globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import { Navbar } from "@/components/Navbar";
+import { Navbar } from "@/components/navbar/Navbar";
 import { SocialLinks } from "@/components/SocialLinks";
 config.autoAddCss = false;
 
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-background text-text antialiased`}
+        className={`${inter.className} scroll-smooth bg-background text-primary antialiased`}
       >
         <Navbar />
         <SocialLinks />
