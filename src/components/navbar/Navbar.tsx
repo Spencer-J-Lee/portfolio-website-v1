@@ -32,13 +32,13 @@ export const Navbar = () => {
   return (
     <header
       className={clsx(
-        "fixed top-0 w-full bg-background/90 px-11 backdrop-blur-xs transition-all",
+        "bg-background/90 backdrop-blur-xs fixed top-0 w-full px-11 transition-all",
         {
           "translate-y-0": show,
           "-translate-y-full": !show,
         },
         {
-          "py-2": minify,
+          "py-2 shadow-2xl": minify,
           "py-5": !minify,
         },
       )}
@@ -46,8 +46,8 @@ export const Navbar = () => {
       <nav className="flex items-center justify-between gap-10">
         <Link href="/">
           <Image
-            src="/assets/duck.png" // TODO
-            alt="logo" // TODO
+            src="/assets/logo.png"
+            alt="Logo of initials SL"
             style={{ objectFit: "contain" }}
             width={40}
             height={40}
