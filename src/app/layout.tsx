@@ -8,6 +8,7 @@ import "../styles/reset.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "../styles/globals.css";
 import { SkipToContent } from "@/components/common/SkipToContent";
+import { ConstellationBg } from "@/components/common/ConstellationBg";
 config.autoAddCss = false;
 
 export const metadata: Metadata = {
@@ -25,10 +26,13 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${IBMPlexMono.variable} bg-background font-inter text-primary scroll-smooth antialiased`}
       >
+        <ConstellationBg />
         <SkipToContent />
-        <Navbar />
-        <SocialLinks />
-        {children}
+        <div className="relative">
+          <Navbar />
+          <SocialLinks />
+          {children}
+        </div>
       </body>
     </html>
   );
