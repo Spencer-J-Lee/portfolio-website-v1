@@ -6,7 +6,7 @@ import { JobBlock } from "./JobBlock";
 export const Experience = () => {
   return (
     <Section id={SECTIONS.EXPERIENCE} title="Experience">
-      <ul className="flex flex-col justify-between gap-10">
+      <ul className="mt-10 flex flex-col justify-between gap-10">
         {experienceData.map((data) => (
           <li key={data.title + data.company}>
             <JobBlock data={data} />

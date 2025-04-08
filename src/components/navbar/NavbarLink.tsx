@@ -10,7 +10,7 @@ export const NavbarLink: FC<NavbarLinkProps> = ({ id, children }) => {
   return (
     <a
       href={`#${id}`}
-      className="hover:text-highlight hover:bg-background-hover cursor-pointer rounded px-3 py-2 font-semibold transition-colors"
+      className="hover:text-highlight hover:bg-background-hover cursor-pointer rounded px-4 py-2.5 font-semibold transition-colors"
     >
       {children}
     </a>

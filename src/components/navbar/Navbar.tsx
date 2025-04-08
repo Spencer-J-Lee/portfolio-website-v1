@@ -33,19 +33,19 @@ export const Navbar = () => {
   return (
     <header
       className={clsx(
-        "bg-background/90 fixed top-0 z-40 w-full px-11 backdrop-blur-[3px] transition-all",
+        "bg-background/90 fixed top-0 z-40 w-full px-11 backdrop-blur-[2px] transition-all",
         {
           "translate-y-0": show,
           "-translate-y-full": !show,
         },
         {
-          "py-2 shadow-2xl": minify,
+          "shadow-navbar py-2": minify,
           "py-5": !minify,
         },
       )}
     >
       <nav className="flex items-center justify-between gap-10">
-        <Link href={SECTIONS.HOME}>
+        <Link href={SECTIONS.HOME} className="p-2">
           <Image
             src="/assets/logo.png"
             alt="Logo of initials SL"

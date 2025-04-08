@@ -8,13 +8,14 @@
   --color-muted: #aaafc3;
   --color-highlight: #6da2ff;
   --color-border: #2a2d3a;
-  --color-success: #3ddc97;
   --color-accessibility-orange: #ffca6d;
 
   --font-inter: var(--font-inter), sans-serif;
   --font-ibm-plex-mono: var(--font-ibm-plex-mono), ui-monospace;
 
   --spacing-screen-xl: 1280px;
+
+  --shadow-navbar: 0 15px 25px 0px var(--tw-shadow-color, rgb(0 0 0 / 0.3));
 }
 
 @layer base {
