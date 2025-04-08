@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 import Link from "next/link";
 import { SECTIONS } from "@/constants/sections";
+import { Button } from "../common/Button";
 
 export const Navbar = () => {
   const [show, setShow] = useState(true);
@@ -54,17 +55,21 @@ export const Navbar = () => {
             height={40}
           />
         </Link>
-        <ul className="flex items-center justify-between gap-1">
-          <li>
-            <NavbarLink id={SECTIONS.ABOUT}>About</NavbarLink>
-          </li>
-          <li>
-            <NavbarLink id={SECTIONS.EXPERIENCE}>Experience</NavbarLink>
-          </li>
-          <li>
-            <NavbarLink id={SECTIONS.PROJECTS}>Projects</NavbarLink>
-          </li>
-        </ul>
+
+        <div className="flex gap-6">
+          <ul className="flex items-center justify-between gap-2">
+            <li>
+              <NavbarLink id={SECTIONS.ABOUT}>About</NavbarLink>
+            </li>
+            <li>
+              <NavbarLink id={SECTIONS.EXPERIENCE}>Experience</NavbarLink>
+            </li>
+            <li>
+              <NavbarLink id={SECTIONS.PROJECTS}>Projects</NavbarLink>
+            </li>
+          </ul>
+          <Button size="sm">Resume</Button> {/* TODO add link */}
+        </div>
       </nav>
     </header>
   );

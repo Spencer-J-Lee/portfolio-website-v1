@@ -1,3 +1,5 @@
+import { Button } from "./common/Button";
+
 export const Hero = () => {
   return (
     <section
@@ -17,6 +19,14 @@ export const Hero = () => {
           pixel-perfect interfaces. I'm obsessed with craftsmanship, always
           aiming for that perfect blend of performance, usability, and design.
         </p>
+        <a
+          href="mailto:spenjlee@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-12 block"
+        >
+          <Button>Contact Me</Button>
+        </a>
       </div>
     </section>
   );
