@@ -56,13 +56,13 @@ export const Navbar = () => {
         </Link>
         <ul className="flex items-center justify-between gap-1">
           <li>
-            <NavbarLink href={`#${SECTIONS.ABOUT}`}>About</NavbarLink>
+            <NavbarLink id={SECTIONS.ABOUT}>About</NavbarLink>
           </li>
           <li>
-            <NavbarLink href={`#${SECTIONS.EXPERIENCE}`}>Experience</NavbarLink>
+            <NavbarLink id={SECTIONS.EXPERIENCE}>Experience</NavbarLink>
           </li>
           <li>
-            <NavbarLink href={`#${SECTIONS.PROJECTS}`}>Projects</NavbarLink>
+            <NavbarLink id={SECTIONS.PROJECTS}>Projects</NavbarLink>
           </li>
         </ul>
       </nav>

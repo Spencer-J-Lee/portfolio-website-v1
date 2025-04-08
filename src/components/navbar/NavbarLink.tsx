@@ -1,18 +1,18 @@
-import Link from "next/link";
+import { SectionId } from "@/constants/sections";
 import { FC, ReactNode } from "react";
 
 interface NavbarLinkProps {
-  href: string;
+  id: SectionId;
   children: ReactNode;
 }
 
-export const NavbarLink: FC<NavbarLinkProps> = ({ href, children }) => {
+export const NavbarLink: FC<NavbarLinkProps> = ({ id, children }) => {
   return (
-    <Link
-      href={href}
-      className="rounded px-3 py-2 transition-colors hover:bg-slate-800/50 hover:text-accent"
+    <a
+      href={`#${id}`}
+      className="hover:text-accent rounded px-3 py-2 transition-colors hover:bg-slate-800/50"
     >
       {children}
-    </Link>
+    </a>
   );
 };
