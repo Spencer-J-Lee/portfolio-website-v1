@@ -1,13 +1,5 @@
 import { COMPANIES, SKILLS } from "./constants";
-
-interface ExperienceData {
-  title: string;
-  company: string;
-  description: string;
-  dateStr: string;
-  link: string;
-  skills: (typeof SKILLS)[keyof typeof SKILLS][];
-}
+import { ExperienceData } from "./types";
 
 export const experienceData: ExperienceData[] = [
   {
