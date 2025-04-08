@@ -17,6 +17,7 @@ export const Button = ({ children, size = "md" }: ButtonProps) => {
   }, [size]);
 
   return (
+    // TODO change this animation
     <button
       className={clsx(
         "border-accent text-accent font-ibm-plex-mono rounded border font-medium transition-all duration-200 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[4px_4px_0_0_#6da2ff]",

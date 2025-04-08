@@ -19,6 +19,7 @@ export const Hero = () => {
           pixel-perfect interfaces. I'm obsessed with craftsmanship, always
           aiming for that perfect blend of performance, usability, and design.
         </p>
+        {/* TODO handle double clickables here. should only have one for accessibility */}
         <a
           href="mailto:spenjlee@gmail.com"
           target="_blank"
