@@ -16,7 +16,7 @@ export const StyledLink = ({
   ...props
 }: StyledLinkProps) => {
   const finalClassName = clsx(
-    "font-semibold hover:text-accent text-primary transition-colors",
+    "font-semibold hover:text-highlight text-primary transition-colors",
     className,
   );
 

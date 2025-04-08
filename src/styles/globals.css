@@ -2,10 +2,11 @@
 
 @theme {
   --color-background: #0e0f1c;
+  --color-background-hover: #2f31454a;
   --color-primary: #f8f9fa;
   --color-accent: #6da2ff;
   --color-muted: #aaafc3;
-  --color-highlight: #7a85e5;
+  --color-highlight: #6da2ff;
   --color-border: #2a2d3a;
   --color-success: #3ddc97;
   --color-accessibility-orange: #ffca6d;
