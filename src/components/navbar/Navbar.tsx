@@ -33,7 +33,7 @@ export const Navbar = () => {
   return (
     <header
       className={clsx(
-        "bg-background/90 backdrop-blur-xs fixed top-0 w-full px-11 transition-all",
+        "bg-background/90 fixed top-0 z-40 w-full px-11 backdrop-blur-[3px] transition-all",
         {
           "translate-y-0": show,
           "-translate-y-full": !show,

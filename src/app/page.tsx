@@ -9,11 +9,11 @@ export default function Home() {
     <main id={SECTIONS.CONTENT} className="m-auto max-w-screen-xl px-20">
       <Hero />
 
-      <About />
-
-      <Experience />
-
-      <Projects />
+      <div className="flex flex-col gap-20">
+        <About />
+        <Experience />
+        <Projects />
+      </div>
     </main>
   );
 }
