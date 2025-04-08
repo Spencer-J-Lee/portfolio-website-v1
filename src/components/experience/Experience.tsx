@@ -11,15 +11,23 @@ export const Experience = () => {
         {experienceData.map(
           ({ title, company, description, dateStr, link, skills }) => (
             <li key={title + company}>
-              <div className="relative grid grid-cols-[1fr_6fr] gap-8">
+              <a
+                href={link}
+                className="hover:bg-background-hover group grid grid-cols-[1fr_6fr] gap-8 rounded px-4 pb-4 pt-3 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className="text-muted/70 mt-0.5 text-right text-sm tracking-wider">
                   {dateStr}
                 </div>
 
                 <div>
-                  <StyledLink href={link} external>
+                  <StyledLink
+                    href={link}
+                    external
+                    className="group-hover:text-accent"
+                  >
                     {`${title} - ${company}`}
-                    <span className="absolute -bottom-4 -left-4 -right-4 -top-3 rounded transition-colors hover:bg-slate-500/10" />
                   </StyledLink>
 
                   <p className="text-muted mt-2 text-sm leading-relaxed">
@@ -34,7 +42,7 @@ export const Experience = () => {
                     ))}
                   </ul>
                 </div>
-              </div>
+              </a>
             </li>
           ),
         )}
