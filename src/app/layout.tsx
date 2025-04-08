@@ -3,12 +3,13 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import { Navbar } from "@/components/navbar/Navbar";
 import { SocialLinks } from "@/components/SocialLinks";
 import { inter, IBMPlexMono } from "@/styles/fonts";
+import { SkipToContent } from "@/components/common/SkipToContent";
+import { ConstellationBg } from "@/components/common/ConstellationBg";
+import { Footer } from "@/components/Footer";
 
 import "../styles/reset.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "../styles/globals.css";
-import { SkipToContent } from "@/components/common/SkipToContent";
-import { ConstellationBg } from "@/components/common/ConstellationBg";
 config.autoAddCss = false;
 
 export const metadata: Metadata = {
@@ -28,11 +29,14 @@ export default function RootLayout({
       >
         <ConstellationBg />
         <SkipToContent />
+
         <div className="relative">
           <Navbar />
           <SocialLinks />
           {children}
         </div>
+
+        <Footer />
       </body>
     </html>
   );
