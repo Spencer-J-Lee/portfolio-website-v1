@@ -55,7 +55,7 @@ export const ConstellationBg = () => {
             distance: 100,
             radius: 250,
             links: {
-              opacity: 0.075,
+              opacity: 0.05,
             },
           },
         },
@@ -65,7 +65,7 @@ export const ConstellationBg = () => {
           value: "#fff",
         },
         links: {
-          color: "#575dab",
+          color: "#6da2ff",
           distance: 120,
           enable: true,
           opacity: 0.15,
