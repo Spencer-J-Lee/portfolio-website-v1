@@ -7,6 +7,7 @@ import { inter, IBMPlexMono } from "@/styles/fonts";
 import "../styles/reset.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "../styles/globals.css";
+import { SkipToContent } from "@/components/common/SkipToContent";
 config.autoAddCss = false;
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${IBMPlexMono.variable} bg-background font-inter text-primary scroll-smooth antialiased`}
       >
+        <SkipToContent />
         <Navbar />
         <SocialLinks />
         {children}

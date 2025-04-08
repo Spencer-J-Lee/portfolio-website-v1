@@ -3,7 +3,7 @@ export const SECTIONS = {
   ABOUT: "about",
   EXPERIENCE: "experience",
   PROJECTS: "projects",
-  CONTACT: "contact",
+  CONTENT: "content",
 } as const;
 
 export type SectionId = (typeof SECTIONS)[keyof typeof SECTIONS];
