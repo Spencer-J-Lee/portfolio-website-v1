@@ -16,7 +16,7 @@ export const StyledLink = ({
   ...props
 }: StyledLinkProps) => {
   const finalClassName = clsx(
-    "font-medium hover:text-accent text-primary transition-colors",
+    "font-semibold hover:text-accent text-primary transition-colors",
     className,
   );
 
@@ -29,8 +29,8 @@ export const StyledLink = ({
         rel="noopener noreferrer"
         {...props}
       >
-        {children}{" "}
-        <span>
+        {children}
+        <span className="ml-3">
           <FontAwesomeIcon icon={faUpRightFromSquare} size="xs" />
         </span>
       </a>

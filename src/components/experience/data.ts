@@ -13,7 +13,7 @@ export const experienceData: ExperienceData[] = [
     company: "Moov Technologies Inc.",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias aspernatur cupiditate fuga ipsam tempore eaque dolore rerum ratione, nobis unde et, qui assumenda nulla aut deleniti dignissimos dicta ipsum fugiat provident, necessitatibus dolorum facere?",
-    dateStr: "2022-2024",
+    dateStr: "2022 — 2024",
     link: "",
     skills: [
       "JavaScript",
@@ -36,7 +36,7 @@ export const experienceData: ExperienceData[] = [
     company: "Moov Technologies Inc.",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias aspernatur cupiditate fuga ipsam tempore eaque dolore rerum ratione, nobis unde et, qui assumenda nulla aut deleniti dignissimos dicta ipsum fugiat provident, necessitatibus dolorum facere?",
-    dateStr: "2020-2022",
+    dateStr: "2020 — 2022",
     link: "",
     skills: [
       "JavaScript",

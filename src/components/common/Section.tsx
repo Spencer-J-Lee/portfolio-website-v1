@@ -12,7 +12,7 @@ export const Section = ({ title, children, id }: SectionProps) => {
     <>
       {id && <ScrollAnchor id={id} />}
       <section>
-        <h4 className="text-4xl font-semibold">{title}</h4>
+        <h4 className="mb-6 text-4xl font-semibold">{title}</h4>
         {children}
       </section>
     </>

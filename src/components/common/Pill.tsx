@@ -1,12 +1,10 @@
-import { FC } from "react";
-
 interface PillProps {
   text: string;
 }
 
 export const Pill = ({ text }: PillProps) => {
   return (
-    <div className="flex justify-center items-center bg-accent text-xs rounded-full py-1 px-3">
+    <div className="bg-accent/15 text-accent flex items-center justify-center rounded-full px-3 py-1 text-xs font-medium">
       {text}
     </div>
   );
