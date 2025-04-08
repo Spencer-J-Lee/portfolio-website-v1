@@ -18,7 +18,7 @@ export const JobBlock = ({ data }: JobBlockProps) => {
       </div>
 
       <div className="z-10">
-        <StyledLink href={link} external>
+        <StyledLink href={link} external showIcon>
           {`${title} - ${company}`}
           <span className="absolute -inset-4 block" />
         </StyledLink>

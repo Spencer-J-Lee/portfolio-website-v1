@@ -6,6 +6,7 @@ import type { ComponentPropsWithoutRef } from "react";
 
 type StyledLinkProps = ComponentPropsWithoutRef<typeof Link> & {
   external?: boolean;
+  showIcon?: boolean;
 };
 
 export const StyledLink = ({
@@ -13,6 +14,7 @@ export const StyledLink = ({
   className,
   children,
   external,
+  showIcon,
   ...props
 }: StyledLinkProps) => {
   const finalClassName = clsx(
@@ -30,9 +32,12 @@ export const StyledLink = ({
         {...props}
       >
         {children}
-        <span className="ml-3">
-          <FontAwesomeIcon icon={faUpRightFromSquare} size="xs" />
-        </span>
+
+        {showIcon && (
+          <span className="ml-3">
+            <FontAwesomeIcon icon={faUpRightFromSquare} size="xs" />
+          </span>
+        )}
       </a>
     );
   }
