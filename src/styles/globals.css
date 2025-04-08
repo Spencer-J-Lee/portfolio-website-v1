@@ -8,9 +8,16 @@
   --color-highlight: #7a85e5;
   --color-border: #2a2d3a;
   --color-success: #3ddc97;
+  --color-accessibility-orange: #ffca6d;
 
   --font-inter: var(--font-inter), sans-serif;
   --font-ibm-plex-mono: var(--font-ibm-plex-mono), ui-monospace;
 
   --spacing-screen-xl: 1280px;
+}
+
+@layer base {
+  *:focus-visible {
+    @apply outline-accessibility-orange;
+  }
 }
