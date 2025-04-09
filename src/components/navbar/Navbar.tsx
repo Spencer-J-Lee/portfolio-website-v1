@@ -6,8 +6,8 @@ import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 import Link from "next/link";
 import { SECTIONS } from "@/constants/sections";
-import { Button } from "../common/button/Button";
 import { useAnimationDelay } from "../hooks/useAnimationDelay";
+import { AnchorButton } from "../common/button/AnchorButton";
 
 export const Navbar = () => {
   const [show, setShow] = useState(true);
@@ -83,13 +83,16 @@ export const Navbar = () => {
               <NavbarLink id={SECTIONS.PROJECTS}>Projects</NavbarLink>
             </li>
           </ul>
-
-          <div
+          <AnchorButton
             className="animate-fade-down opacity-0"
             style={{ animationDelay: toMSStr(delay.nav[5]) }}
+            size="sm"
+            href="/Spencer_Lee_Software_Engineer_Resume.pdf" // Update this with new resume that has website link
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Button size="sm">Resume</Button> {/* TODO add link */}
-          </div>
+            Resume
+          </AnchorButton>
         </div>
       </nav>
     </header>
