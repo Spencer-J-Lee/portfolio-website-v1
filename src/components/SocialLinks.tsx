@@ -20,6 +20,7 @@ export const SocialLinks = () => {
             href="https://www.github.com/Spencer-J-Lee"
             target="_blank"
             className="hover:text-highlight text-primary block p-2 transition-colors"
+            aria-label="Github Link"
           >
             <FontAwesomeIcon icon={faGithub} size="lg" color="inherit" />
           </a>
@@ -29,6 +30,7 @@ export const SocialLinks = () => {
             href="https://www.linkedin.com/in/spenjlee/"
             target="_blank"
             className="hover:text-highlight text-primary block p-2 transition-colors"
+            aria-label="LinkedIn Link"
           >
             <FontAwesomeIcon icon={faLinkedin} size="lg" color="inherit" />
           </a>
@@ -38,6 +40,7 @@ export const SocialLinks = () => {
             href="https://www.codepen.io/MisterJibbs"
             target="_blank"
             className="hover:text-highlight text-primary block p-2 transition-colors"
+            aria-label="CodePen Link"
           >
             <FontAwesomeIcon icon={faCodepen} size="lg" color="inherit" />
           </a>
