@@ -1,4 +1,5 @@
 import { Button } from "./common/Button";
+import { Button } from "./common/button/Button";
 import { useAnimationDelay } from "./hooks/useAnimationDelay";
 
 export const Hero = () => {

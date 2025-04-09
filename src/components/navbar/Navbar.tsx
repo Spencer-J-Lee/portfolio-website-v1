@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 import Link from "next/link";
 import { SECTIONS } from "@/constants/sections";
-import { Button } from "../common/Button";
+import { Button } from "../common/button/Button";
 import { useAnimationDelay } from "../hooks/useAnimationDelay";
 
 export const Navbar = () => {
