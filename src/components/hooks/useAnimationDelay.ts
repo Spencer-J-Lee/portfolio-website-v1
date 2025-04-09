@@ -13,6 +13,8 @@ export const useAnimationDelay = () => {
   const genDelay = () => {
     const navElsCount = 5;
     const heroElsCount = 5;
+    const siblingDelay = 100;
+    const sectionDelay = 600;
     const delay: DelayObj = {
       nav: {},
       hero: {},
@@ -20,19 +22,19 @@ export const useAnimationDelay = () => {
       particles: 0,
     };
 
-    let curr = 0;
+    let curr = 100;
     for (let i = 0; i < navElsCount; i++) {
-      curr += 100;
       delay.nav[i + 1] = curr;
+      if (i < navElsCount) curr += siblingDelay;
     }
 
-    curr += 500;
+    curr += sectionDelay;
     for (let i = 0; i < heroElsCount; i++) {
-      curr += 100;
       delay.hero[i + 1] = curr;
+      if (i < heroElsCount) curr += siblingDelay;
     }
 
-    curr += 600;
+    curr += sectionDelay;
     delay.social = curr;
 
     curr += 300;
