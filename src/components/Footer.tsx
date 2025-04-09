@@ -17,7 +17,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="text-muted relative m-auto mt-20 max-w-80 max-w-screen-xl px-20 pb-10 text-center">
+    <footer className="text-muted mt-30 relative m-auto max-w-80 max-w-screen-xl px-20 pb-20 text-center">
       Built with {links.next}, {links.tailwind}, and {links.particles}. Deployed
       with {links.vercel}.
     </footer>
