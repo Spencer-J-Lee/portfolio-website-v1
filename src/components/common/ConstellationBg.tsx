@@ -9,17 +9,24 @@ import {
   OutMode,
 } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
+import { useAnimationDelay } from "../hooks/useAnimationDelay";
 
 export const ConstellationBg = () => {
   const [init, setInit] = useState(false);
+  const { delay } = useAnimationDelay();
 
-  // this should be run only once per application lifetime
+  // This should be run ONLY ONCE per application lifetime
   useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      await loadSlim(engine);
-    }).then(() => {
-      setInit(true);
-    });
+    // Delay setting this up to prevent performance hits during animations on initial page
+    const id = setTimeout(() => {
+      initParticlesEngine(async (engine) => {
+        await loadSlim(engine);
+      }).then(() => {
+        setInit(true);
+      });
+    }, delay.particles);
+
+    return () => clearTimeout(id);
   }, []);
 
   const particlesLoaded = async (container?: Container): Promise<void> => {
@@ -95,11 +102,16 @@ export const ConstellationBg = () => {
 
   if (init) {
     return (
-      <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={options}
-      />
+      <>
+        <div className="absolute">
+          <Particles
+            id="tsparticles"
+            particlesLoaded={particlesLoaded}
+            options={options}
+          />
+        </div>
+        <div className="bg-background animate-fade-out fixed bottom-0 left-0 right-0 top-0" />
+      </>
     );
   }
 

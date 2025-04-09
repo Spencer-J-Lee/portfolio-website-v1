@@ -4,10 +4,16 @@ import {
   faCodepen,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useAnimationDelay } from "./hooks/useAnimationDelay";
 
 export const SocialLinks = () => {
+  const { delay, toMSStr } = useAnimationDelay();
+
   return (
-    <aside className="fixed bottom-0 left-7 flex flex-col items-center lg:left-12">
+    <aside
+      className="animate-fade-up fixed bottom-0 left-7 flex flex-col items-center opacity-0 lg:left-12"
+      style={{ animationDelay: toMSStr(delay.social) }}
+    >
       <ul className="flex flex-col items-center gap-1">
         <li>
           <a
