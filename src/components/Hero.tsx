@@ -1,4 +1,4 @@
-import { Button } from "./common/Button";
+import { AnchorButton } from "./common/button/AnchorButton";
 import { Button } from "./common/button/Button";
 import { useAnimationDelay } from "./hooks/useAnimationDelay";
 
@@ -17,18 +17,21 @@ export const Hero = () => {
         >
           Hi there, my name is
         </h1>
+
         <h2
           className="animate-fade-up -ml-0.5 mt-3 text-7xl font-bold opacity-0"
           style={{ animationDelay: toMSStr(delay.hero[2]) }}
         >
           Spencer Lee.
         </h2>
+
         <h3
           className="text-muted animate-fade-up mt-5 text-6xl font-bold opacity-0"
           style={{ animationDelay: toMSStr(delay.hero[3]) }}
         >
           I build digital experiences.
         </h3>
+
         <p
           className="text-muted animate-fade-up ml-0.5 mt-8 max-w-[510px] leading-relaxed opacity-0"
           style={{ animationDelay: toMSStr(delay.hero[4]) }}
@@ -37,16 +40,16 @@ export const Hero = () => {
           pixel-perfect interfaces. I'm obsessed with craftsmanship, always
           aiming for that perfect blend of performance, usability, and design.
         </p>
-        {/* TODO handle double clickables here. should only have one for accessibility */}
-        <a
+
+        <AnchorButton
           href="mailto:spenjlee@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
           className="animate-fade-up mt-12 inline-block opacity-0"
           style={{ animationDelay: toMSStr(delay.hero[5]) }}
         >
-          <Button>Contact Me</Button>
-        </a>
+          Contact Me
+        </AnchorButton>
       </div>
     </section>
   );
