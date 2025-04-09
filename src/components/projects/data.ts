@@ -1,13 +1,4 @@
-interface ProjectData {
-  image: {
-    src: string;
-    alt: string;
-  };
-  link: string;
-  title: string;
-  description: string;
-  skills: string[];
-}
+import { ProjectData } from "./types";
 
 export const projectData: ProjectData[] = [
   {

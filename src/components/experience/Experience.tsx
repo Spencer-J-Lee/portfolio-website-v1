@@ -1,7 +1,7 @@
 import { SECTIONS } from "@/constants/sections";
 import { Section } from "../common/Section";
 import { experienceData } from "./data";
-import { JobBlock } from "./JobBlock";
+import { ExperienceCard } from "../common/infoCard/ExperienceCard";
 
 export const Experience = () => {
   return (
@@ -9,7 +9,7 @@ export const Experience = () => {
       <ul className="mt-10 flex flex-col justify-between gap-10">
         {experienceData.map((data) => (
           <li key={data.title + data.company}>
-            <JobBlock data={data} />
+            <ExperienceCard data={data} />
           </li>
         ))}
       </ul>

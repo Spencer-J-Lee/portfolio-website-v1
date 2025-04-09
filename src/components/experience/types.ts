@@ -1,4 +1,4 @@
-import { SKILLS } from "./constants";
+import { Skill } from "./constants";
 
 export interface ExperienceData {
   title: string;
@@ -6,5 +6,5 @@ export interface ExperienceData {
   description: string;
   dateStr: string;
   link: string;
-  skills: (typeof SKILLS)[keyof typeof SKILLS][];
+  skills: Skill[];
 }

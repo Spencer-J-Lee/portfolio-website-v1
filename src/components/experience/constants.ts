@@ -19,6 +19,7 @@ export const SKILLS = {
   SASS: "SASS",
   STYLED_COMPONENTS: "Styled Components",
 } as const;
+export type Skill = (typeof SKILLS)[keyof typeof SKILLS];
 
 export const COMPANIES = {
   MOOV: "Moov Technologies Inc.",
