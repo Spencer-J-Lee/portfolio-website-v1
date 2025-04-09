@@ -1,7 +1,7 @@
 import { Section } from "../common/Section";
 import { projectData } from "./data";
 import { SECTIONS } from "@/constants/sections";
-import { ProjectCard } from "../common/infoCard/ProjectCard";
+import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
   return (

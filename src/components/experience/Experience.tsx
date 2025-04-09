@@ -1,7 +1,7 @@
 import { SECTIONS } from "@/constants/sections";
 import { Section } from "../common/Section";
 import { experienceData } from "./data";
-import { ExperienceCard } from "../common/infoCard/ExperienceCard";
+import { ExperienceCard } from "./ExperienceCard";
 
 export const Experience = () => {
   return (

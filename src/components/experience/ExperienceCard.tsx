@@ -1,6 +1,6 @@
 import { ExperienceData } from "@/components/experience/types";
-import { HighlightBlock } from "./HighlightBlock";
-import { CardWrapper } from "./CardWrapper";
+import { HighlightBlock } from "../common/infoCard/HighlightBlock";
+import { CardWrapper } from "../common/infoCard/CardWrapper";
 
 interface ExperienceCardProps {
   data: ExperienceData;
