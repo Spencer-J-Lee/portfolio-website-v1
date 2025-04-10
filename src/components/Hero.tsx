@@ -1,5 +1,5 @@
-import { AnchorButton } from "./common/button/AnchorButton";
-import { Button } from "./common/button/Button";
+import { AnchorButton } from "./common/buttons/AnchorButton";
+import { Button } from "./common/buttons/Button";
 import { useAnimationDelay } from "./hooks/useAnimationDelay";
 
 export const Hero = () => {

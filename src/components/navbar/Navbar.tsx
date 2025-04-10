@@ -7,7 +7,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { SECTIONS } from "@/constants/sections";
 import { useAnimationDelay } from "../hooks/useAnimationDelay";
-import { AnchorButton } from "../common/button/AnchorButton";
+import { AnchorButton } from "../common/buttons/AnchorButton";
 
 export const Navbar = () => {
   const [show, setShow] = useState(true);
