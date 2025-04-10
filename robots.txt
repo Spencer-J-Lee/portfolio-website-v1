@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+// TODO add actual site url
+Sitemap: https://yourdomain.com/sitemap.xml

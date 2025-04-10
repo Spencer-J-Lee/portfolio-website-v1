@@ -1,6 +1,7 @@
 import { SECTIONS } from "@/constants/sections";
 import { Section } from "./common/Section";
 
+// TODO add actual copy
 export const About = () => {
   return (
     <Section id={SECTIONS.ABOUT} title="About Me">

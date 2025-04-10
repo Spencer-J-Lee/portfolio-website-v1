@@ -5,6 +5,7 @@ export const experienceData: ExperienceData[] = [
   {
     role: "Software Engineer",
     company: COMPANIES.MOOV,
+    // TODO add actual copy
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias aspernatur cupiditate fuga ipsam tempore eaque dolore rerum ratione, nobis unde et, qui assumenda nulla aut deleniti dignissimos dicta ipsum fugiat provident, necessitatibus dolorum facere?",
     dateStr: "2022 — 2024",
@@ -31,6 +32,7 @@ export const experienceData: ExperienceData[] = [
   {
     role: "Junior Software Engineer",
     company: "Moov Technologies Inc.",
+    // TODO add actual copy
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias aspernatur cupiditate fuga ipsam tempore eaque dolore rerum ratione, nobis unde et, qui assumenda nulla aut deleniti dignissimos dicta ipsum fugiat provident, necessitatibus dolorum facere?",
     dateStr: "2020 — 2022",
@@ -56,6 +58,7 @@ export const experienceData: ExperienceData[] = [
   {
     role: "Intern Software Engineer",
     company: "Moov Technologies Inc.",
+    // TODO add actual copy
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias aspernatur cupiditate fuga ipsam tempore eaque dolore rerum ratione, nobis unde et, qui assumenda nulla aut deleniti dignissimos dicta ipsum fugiat provident, necessitatibus dolorum facere?",
     dateStr: "2020",
