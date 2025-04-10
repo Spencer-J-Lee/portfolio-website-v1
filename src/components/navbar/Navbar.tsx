@@ -42,7 +42,7 @@ export const Navbar = () => {
           "-translate-y-full": !show,
         },
         {
-          "shadow-navbar bg-background/90 py-5 backdrop-blur-[2px] lg:py-2":
+          "shadow-navbar bg-background/90 py-3 backdrop-blur-[2px] lg:py-2":
             minify,
           "py-5": !minify,
         },
