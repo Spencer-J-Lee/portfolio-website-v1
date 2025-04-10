@@ -3,7 +3,7 @@ import { ExperienceData } from "./types";
 
 export const experienceData: ExperienceData[] = [
   {
-    title: "Software Engineer",
+    role: "Software Engineer",
     company: COMPANIES.MOOV,
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias aspernatur cupiditate fuga ipsam tempore eaque dolore rerum ratione, nobis unde et, qui assumenda nulla aut deleniti dignissimos dicta ipsum fugiat provident, necessitatibus dolorum facere?",
@@ -29,7 +29,7 @@ export const experienceData: ExperienceData[] = [
     ],
   },
   {
-    title: "Junior Software Engineer",
+    role: "Junior Software Engineer",
     company: "Moov Technologies Inc.",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias aspernatur cupiditate fuga ipsam tempore eaque dolore rerum ratione, nobis unde et, qui assumenda nulla aut deleniti dignissimos dicta ipsum fugiat provident, necessitatibus dolorum facere?",
@@ -54,7 +54,7 @@ export const experienceData: ExperienceData[] = [
     ],
   },
   {
-    title: "Intern Software Engineer",
+    role: "Intern Software Engineer",
     company: "Moov Technologies Inc.",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias aspernatur cupiditate fuga ipsam tempore eaque dolore rerum ratione, nobis unde et, qui assumenda nulla aut deleniti dignissimos dicta ipsum fugiat provident, necessitatibus dolorum facere?",

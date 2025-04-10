@@ -1,7 +1,7 @@
 import { Skill } from "./constants";
 
 export interface ExperienceData {
-  title: string;
+  role: string;
   company: string;
   description: string;
   dateStr: string;

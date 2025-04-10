@@ -7,7 +7,7 @@ interface ExperienceCardProps {
 }
 
 export const ExperienceCard = ({ data }: ExperienceCardProps) => {
-  const { dateStr, ...otherData } = data;
+  const { dateStr, role, company, ...otherData } = data;
 
   return (
     <CardWrapper>
@@ -15,8 +15,11 @@ export const ExperienceCard = ({ data }: ExperienceCardProps) => {
         {dateStr}
       </div>
 
-      {/* TODO fix missing company */}
-      <HighlightBlock className="z-10" {...otherData} />
+      <HighlightBlock
+        className="z-10"
+        title={`${role} ◇ ${company}`}
+        {...otherData}
+      />
     </CardWrapper>
   );
 };

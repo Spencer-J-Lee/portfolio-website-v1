@@ -2,10 +2,11 @@ import { Skill } from "@/components/experience/constants";
 import { Pill } from "../Pill";
 import { StyledLink } from "../StyledLink";
 import clsx from "clsx";
+import { ReactNode } from "react";
 
 interface HighlightBlockProps {
   link: string;
-  title: string;
+  title: ReactNode;
   description: string;
   skills: Skill[];
   className?: string;
@@ -27,13 +28,15 @@ export const HighlightBlock = ({
 
       <p className="text-muted mt-2 text-sm leading-relaxed">{description}</p>
 
-      <ul className="mt-4 flex flex-wrap gap-2.5">
-        {skills.map((skill) => (
-          <li key={skill}>
-            <Pill text={skill} />
-          </li>
-        ))}
-      </ul>
+      {skills.length && (
+        <ul className="mt-4 flex flex-wrap gap-2.5">
+          {skills.map((skill) => (
+            <li key={skill}>
+              <Pill text={skill} />
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };

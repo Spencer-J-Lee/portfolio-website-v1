@@ -8,7 +8,7 @@ export const Experience = () => {
     <Section id={SECTIONS.EXPERIENCE} title="Experience">
       <ul className="gap-15 mt-2.5 flex flex-col justify-between lg:mt-10 lg:gap-10">
         {experienceData.map((data) => (
-          <li key={data.title + data.company}>
+          <li key={data.role + data.company}>
             <ExperienceCard data={data} />
           </li>
         ))}
