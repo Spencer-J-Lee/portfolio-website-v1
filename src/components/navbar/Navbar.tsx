@@ -84,6 +84,7 @@ export const Navbar = () => {
               <NavbarLink id={SECTIONS.PROJECTS}>Projects</NavbarLink>
             </li>
           </ul>
+
           <AnchorButton
             className="animate-fade-down opacity-0"
             style={{ animationDelay: toMSStr(delay.nav[5]) }}

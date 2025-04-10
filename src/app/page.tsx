@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main
       id={SECTIONS.CONTENT}
-      className="m-auto max-w-screen-xl px-5 lg:px-20"
+      className="m-auto max-w-screen-xl px-5 lg:px-28"
     >
       <Hero />
 

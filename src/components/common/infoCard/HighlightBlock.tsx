@@ -22,7 +22,7 @@ export const HighlightBlock = ({
     <div className={clsx(className)}>
       <StyledLink href={link} external showIcon>
         {title}
-        <span className="absolute -inset-4 block" />
+        <span className="absolute -inset-4 hidden lg:block" />
       </StyledLink>
 
       <p className="text-muted mt-2 text-sm leading-relaxed">{description}</p>

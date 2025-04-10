@@ -6,9 +6,8 @@ interface CardWrapperProps {
 
 export const CardWrapper = ({ children }: CardWrapperProps) => {
   return (
-    // TODO add mobile styling
-    <div className="group relative grid grid-cols-[1fr_6fr] gap-8">
-      <div className="group-hover:bg-background-hover absolute -inset-4 rounded transition-colors" />
+    <div className="group relative flex flex-col gap-2 lg:grid lg:grid-cols-[1fr_6fr] lg:gap-8">
+      <div className="group-hover:bg-background-hover absolute -inset-4 hidden rounded transition-colors lg:block" />
       {children}
     </div>
   );

@@ -12,28 +12,28 @@ export const Hero = () => {
     >
       <div>
         <h1
-          className="font-ibm-plex-mono text-accent animate-fade-up ml-0.5 text-base opacity-0 lg:text-xl"
+          className="font-ibm-plex-mono text-accent animate-fade-up ml-0.5 text-base opacity-0 md:text-xl"
           style={{ animationDelay: toMSStr(delay.hero[1]) }}
         >
           Hi there, my name is
         </h1>
 
         <h2
-          className="animate-fade-up -ml-0.5 mt-3 text-4xl font-bold opacity-0 lg:mt-3 lg:text-7xl"
+          className="animate-fade-up -ml-0.5 mt-3 text-4xl font-bold opacity-0 md:mt-3 md:text-7xl"
           style={{ animationDelay: toMSStr(delay.hero[2]) }}
         >
           Spencer Lee.
         </h2>
 
         <h3
-          className="text-muted animate-fade-up mt-3 text-3xl font-bold opacity-0 lg:mt-5 lg:text-6xl"
+          className="text-muted animate-fade-up mt-3 text-3xl font-bold opacity-0 md:mt-5 md:text-5xl lg:text-6xl"
           style={{ animationDelay: toMSStr(delay.hero[3]) }}
         >
           I build digital experiences.
         </h3>
 
         <p
-          className="text-muted animate-fade-up ml-0.5 mt-2.5 max-w-[510px] text-sm leading-relaxed opacity-0 lg:mt-8 lg:text-base"
+          className="text-muted animate-fade-up ml-0.5 mt-2.5 max-w-[510px] text-sm leading-relaxed opacity-0 md:mt-8 md:text-base"
           style={{ animationDelay: toMSStr(delay.hero[4]) }}
         >
           I'm a software engineer who specializes in creating accessible,
@@ -45,7 +45,7 @@ export const Hero = () => {
           href="mailto:spenjlee@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="animate-fade-up mt-10 inline-block opacity-0 lg:mt-12"
+          className="animate-fade-up mt-10 inline-block opacity-0 md:mt-12"
           style={{ animationDelay: toMSStr(delay.hero[5]) }}
         >
           Contact Me
