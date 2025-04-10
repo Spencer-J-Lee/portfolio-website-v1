@@ -36,13 +36,14 @@ export const Navbar = () => {
   return (
     <header
       className={clsx(
-        "fixed top-0 z-40 w-full px-11 transition-all",
+        "fixed top-0 z-40 w-full px-5 transition-all lg:px-11",
         {
           "translate-y-0": show,
           "-translate-y-full": !show,
         },
         {
-          "shadow-navbar bg-background/90 py-2 backdrop-blur-[2px]": minify,
+          "shadow-navbar bg-background/90 py-5 backdrop-blur-[2px] lg:py-2":
+            minify,
           "py-5": !minify,
         },
       )}
@@ -50,7 +51,7 @@ export const Navbar = () => {
       <nav className="flex items-center justify-between gap-10">
         <Link
           href={SECTIONS.HOME}
-          className="animate-fade-down p-2 opacity-0"
+          className="animate-fade-down opacity-0 lg:p-2"
           style={{ animationDelay: toMSStr(delay.nav[1]) }}
         >
           <Image
@@ -63,7 +64,7 @@ export const Navbar = () => {
         </Link>
 
         <div className="flex gap-6">
-          <ul className="flex items-center justify-between gap-2">
+          <ul className="hidden items-center justify-between gap-2 lg:flex">
             <li
               className="animate-fade-down opacity-0"
               style={{ animationDelay: toMSStr(delay.nav[2]) }}

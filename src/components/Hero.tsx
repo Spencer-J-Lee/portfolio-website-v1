@@ -1,6 +1,6 @@
 import { AnchorButton } from "./common/buttons/AnchorButton";
-import { Button } from "./common/buttons/Button";
 import { useAnimationDelay } from "./hooks/useAnimationDelay";
+import { SocialLinksMobile } from "./socialLinks/SociaLinksMobile";
 
 export const Hero = () => {
   const { delay, toMSStr } = useAnimationDelay();
@@ -8,32 +8,32 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex min-h-screen flex-col items-center justify-center"
+      className="flex min-h-screen flex-col justify-center pt-20 lg:items-center lg:pt-0"
     >
       <div>
         <h1
-          className="font-ibm-plex-mono text-accent animate-fade-up ml-0.5 text-xl opacity-0"
+          className="font-ibm-plex-mono text-accent animate-fade-up ml-0.5 text-base opacity-0 lg:text-xl"
           style={{ animationDelay: toMSStr(delay.hero[1]) }}
         >
           Hi there, my name is
         </h1>
 
         <h2
-          className="animate-fade-up -ml-0.5 mt-3 text-7xl font-bold opacity-0"
+          className="animate-fade-up -ml-0.5 mt-3 text-4xl font-bold opacity-0 lg:mt-3 lg:text-7xl"
           style={{ animationDelay: toMSStr(delay.hero[2]) }}
         >
           Spencer Lee.
         </h2>
 
         <h3
-          className="text-muted animate-fade-up mt-5 text-6xl font-bold opacity-0"
+          className="text-muted animate-fade-up mt-3 text-3xl font-bold opacity-0 lg:mt-5 lg:text-6xl"
           style={{ animationDelay: toMSStr(delay.hero[3]) }}
         >
           I build digital experiences.
         </h3>
 
         <p
-          className="text-muted animate-fade-up ml-0.5 mt-8 max-w-[510px] leading-relaxed opacity-0"
+          className="text-muted animate-fade-up ml-0.5 mt-2.5 max-w-[510px] text-sm leading-relaxed opacity-0 lg:mt-8 lg:text-base"
           style={{ animationDelay: toMSStr(delay.hero[4]) }}
         >
           I'm a software engineer who specializes in creating accessible,
@@ -45,12 +45,14 @@ export const Hero = () => {
           href="mailto:spenjlee@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="animate-fade-up mt-12 inline-block opacity-0"
+          className="animate-fade-up mt-10 inline-block opacity-0 lg:mt-12"
           style={{ animationDelay: toMSStr(delay.hero[5]) }}
         >
           Contact Me
         </AnchorButton>
       </div>
+
+      <SocialLinksMobile />
     </section>
   );
 };

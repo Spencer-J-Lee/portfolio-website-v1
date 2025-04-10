@@ -15,6 +15,7 @@ export const ExperienceCard = ({ data }: ExperienceCardProps) => {
         {dateStr}
       </div>
 
+      {/* TODO fix missing company */}
       <HighlightBlock className="z-10" {...otherData} />
     </CardWrapper>
   );

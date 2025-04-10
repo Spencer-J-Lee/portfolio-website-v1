@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { Navbar } from "@/components/navbar/Navbar";
-import { SocialLinks } from "@/components/SocialLinks";
+import { SocialLinks } from "@/components/socialLinks/SocialLinks";
 import { inter, IBMPlexMono } from "@/styles/fonts";
 import { SkipToContent } from "@/components/common/SkipToContent";
 import { ConstellationBg } from "@/components/common/ConstellationBg";
