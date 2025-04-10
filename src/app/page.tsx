@@ -9,7 +9,7 @@ export default function Home() {
     <main id={SECTIONS.CONTENT} className="m-auto max-w-screen-xl px-20">
       <Hero />
 
-      <div className="flex flex-col gap-20">
+      <div className="flex flex-col gap-40">
         <About />
         <Experience />
         <Projects />

@@ -3,7 +3,7 @@ interface ScrollAnchorProps {
   offset?: number;
 }
 
-export const ScrollAnchor = ({ id, offset = 50 }: ScrollAnchorProps) => {
+export const ScrollAnchor = ({ id, offset = 80 }: ScrollAnchorProps) => {
   return (
     <div className="relative">
       <div
