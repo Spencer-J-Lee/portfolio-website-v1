@@ -5,9 +5,8 @@ export const experienceData: ExperienceData[] = [
   {
     role: "Software Engineer",
     company: COMPANIES.MOOV,
-    // TODO add actual copy
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias aspernatur cupiditate fuga ipsam tempore eaque dolore rerum ratione, nobis unde et, qui assumenda nulla aut deleniti dignissimos dicta ipsum fugiat provident, necessitatibus dolorum facere?",
+      "Built and maintained critical features across the entire marketplace website including enhanced equipment search functionality, equipment management services, and reuseable design systems. Integrated third-party APIs to track shipments, insights on user behavior, and real-time management of open positions.",
     dateStr: "2022 — 2024",
     link: "https://moov.co/search?search_flow_type=text",
     skills: [
@@ -32,9 +31,8 @@ export const experienceData: ExperienceData[] = [
   {
     role: "Junior Software Engineer",
     company: "Moov Technologies Inc.",
-    // TODO add actual copy
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias aspernatur cupiditate fuga ipsam tempore eaque dolore rerum ratione, nobis unde et, qui assumenda nulla aut deleniti dignissimos dicta ipsum fugiat provident, necessitatibus dolorum facere?",
+      "Collaborated with engineering mentor to develop v2.0 of the marketplace website from the ground up and led efforts to enhance website accessibility. Created a blogging system to allow real-time posts and updates. Developed features and data visualizations for the marketplace and internal sales management tool.",
     dateStr: "2020 — 2022",
     link: "https://moov.co/sell",
     skills: [
@@ -58,9 +56,8 @@ export const experienceData: ExperienceData[] = [
   {
     role: "Intern Software Engineer",
     company: "Moov Technologies Inc.",
-    // TODO add actual copy
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias aspernatur cupiditate fuga ipsam tempore eaque dolore rerum ratione, nobis unde et, qui assumenda nulla aut deleniti dignissimos dicta ipsum fugiat provident, necessitatibus dolorum facere?",
+      "Built user interfaces and enhanced features for a B2B marketplace website and internal sales management tool, enabling our sales team to assist clients in buying and selling used semi-conductor equipment.",
     dateStr: "2020",
     link: "https://www.moov.co",
     skills: [

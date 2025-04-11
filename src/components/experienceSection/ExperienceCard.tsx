@@ -17,7 +17,7 @@ export const ExperienceCard = ({ data }: ExperienceCardProps) => {
 
       <HighlightBlock
         className="z-10"
-        title={`${role} ◇ ${company}`}
+        title={`${role} • ${company}`}
         {...otherData}
       />
     </CardWrapper>
