@@ -1,5 +1,5 @@
 import { AnchorButton } from "./common/buttons/AnchorButton";
-import { useAnimationDelay } from "./hooks/useAnimationDelay";
+import { useAnimationDelay } from "./navbar/hooks";
 import { SocialLinksMobile } from "./socialLinks/SociaLinksMobile";
 
 export const Hero = () => {

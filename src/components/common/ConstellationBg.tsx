@@ -9,7 +9,7 @@ import {
   OutMode,
 } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
-import { useAnimationDelay } from "../hooks/useAnimationDelay";
+import { useAnimationDelay } from "../navbar/hooks";
 
 export const ConstellationBg = () => {
   const [init, setInit] = useState(false);

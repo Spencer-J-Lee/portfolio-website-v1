@@ -1,4 +1,4 @@
-import { Skill } from "../experience/constants";
+import { Skill } from "../experienceSection/constants";
 
 export interface ProjectData {
   image: {

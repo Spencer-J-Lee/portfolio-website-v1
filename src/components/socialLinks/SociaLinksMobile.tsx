@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useAnimationDelay } from "../hooks/useAnimationDelay";
+import { useAnimationDelay } from "../navbar/hooks";
 import { socialData } from "./data";
 
 export const SocialLinksMobile = () => {

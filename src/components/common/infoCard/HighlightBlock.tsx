@@ -1,4 +1,4 @@
-import { Skill } from "@/components/experience/constants";
+import { Skill } from "@/components/experienceSection/constants";
 import { Pill } from "../Pill";
 import { StyledLink } from "../StyledLink";
 import clsx from "clsx";

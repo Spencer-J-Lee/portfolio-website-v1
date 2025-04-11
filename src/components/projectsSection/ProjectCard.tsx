@@ -1,6 +1,6 @@
 import { HighlightBlock } from "../common/infoCard/HighlightBlock";
 import Image from "next/image";
-import { ProjectData } from "@/components/projects/types";
+import { ProjectData } from "@/components/projectsSection/types";
 import { CardWrapper } from "../common/infoCard/CardWrapper";
 
 interface ProjectCardProps {

@@ -1,4 +1,4 @@
-import { ExperienceData } from "@/components/experience/types";
+import { ExperienceData } from "@/components/experienceSection/types";
 import { HighlightBlock } from "../common/infoCard/HighlightBlock";
 import { CardWrapper } from "../common/infoCard/CardWrapper";
 
