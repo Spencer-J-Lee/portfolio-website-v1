@@ -3,7 +3,7 @@ import { useAnimationDelay } from "../navbar/hooks";
 import { socialData } from "./data";
 
 export const SocialLinksMobile = () => {
-  const { delay, toMSStr } = useAnimationDelay("mobile");
+  const { delay, toMSStr } = useAnimationDelay();
 
   return (
     <ul

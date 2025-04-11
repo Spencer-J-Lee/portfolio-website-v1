@@ -9,9 +9,9 @@ interface DelayObj {
  * Calculates delays for elements above-the-fold on initial page load
  * to create an animation domino effect.
  */
-export const useAnimationDelay = (res: "desktop" | "mobile" = "desktop") => {
+export const useAnimationDelay = () => {
   const genDelay = () => {
-    const navElsCount = res === "desktop" ? 4 : 2;
+    const navElsCount = 4;
     const heroElsCount = 5;
     const siblingDelay = 100;
     const sectionDelay = 500;
