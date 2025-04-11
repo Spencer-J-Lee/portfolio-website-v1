@@ -53,7 +53,7 @@ export const ConstellationBg = () => {
             distance: 100,
             radius: 250,
             links: {
-              opacity: 0.05,
+              opacity: 0.06,
             },
           },
         },
@@ -86,7 +86,7 @@ export const ConstellationBg = () => {
           value: 200,
         },
         opacity: {
-          value: 0.6,
+          value: 0.5,
         },
         shape: {
           type: "circle",
