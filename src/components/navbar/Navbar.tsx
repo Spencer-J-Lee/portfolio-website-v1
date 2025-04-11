@@ -60,6 +60,7 @@ export const Navbar = () => {
             style={{ objectFit: "contain" }}
             width={40}
             height={40}
+            priority
           />
         </Link>
 
