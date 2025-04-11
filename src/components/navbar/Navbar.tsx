@@ -77,19 +77,19 @@ export const Navbar = () => {
             >
               <NavbarLink id={SECTIONS.EXPERIENCE}>Experience</NavbarLink>
             </li>
-            <li
+            {/* <li
               className="animate-fade-down opacity-0"
               style={{ animationDelay: toMSStr(delay.nav[4]) }}
             >
               <NavbarLink id={SECTIONS.PROJECTS}>Projects</NavbarLink>
-            </li>
+            </li> */}
           </ul>
 
           <AnchorButton
             className="animate-fade-down opacity-0"
-            style={{ animationDelay: toMSStr(delay.nav[5]) }}
+            style={{ animationDelay: toMSStr(delay.nav[4]) }}
             size="sm"
-            href="/Spencer_Lee_Software_Engineer_Resume.pdf" // Update this with new resume that has website link
+            href="/Spencer_Lee_Software_Engineer_Resume.pdf" // TODO Update this with new resume that has website link
             target="_blank"
             rel="noopener noreferrer"
           >

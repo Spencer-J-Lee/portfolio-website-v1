@@ -11,10 +11,11 @@ interface DelayObj {
  */
 export const useAnimationDelay = (res: "desktop" | "mobile" = "desktop") => {
   const genDelay = () => {
-    const navElsCount = res === "desktop" ? 5 : 2;
+    const navElsCount = res === "desktop" ? 4 : 2;
     const heroElsCount = 5;
     const siblingDelay = 100;
-    const sectionDelay = 600;
+    const sectionDelay = 500;
+    const particlesDelay = 300;
     const delay: DelayObj = {
       nav: {},
       hero: {},
@@ -37,7 +38,7 @@ export const useAnimationDelay = (res: "desktop" | "mobile" = "desktop") => {
     curr += sectionDelay;
     delay.social = curr;
 
-    curr += 300;
+    curr += particlesDelay;
     delay.particles = curr;
 
     return delay;
