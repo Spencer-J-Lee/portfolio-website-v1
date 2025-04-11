@@ -1,26 +1,28 @@
 import { SECTIONS } from "@/constants/sections";
 import { Section } from "./common/Section";
 
-// TODO add actual copy
 export const About = () => {
   return (
     <Section id={SECTIONS.ABOUT} title="About Me">
-      <div className="flex flex-col gap-3">
-        <p className="text-muted leading-relaxed">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aliquam
-          iste nihil consectetur labore architecto, sed ad voluptatum sunt earum
-          eaque illum magnam. Nostrum ad soluta impedit quibusdam maxime tempora
-          minima repudiandae mollitia iusto sequi consequatur pariatur quia sit
+      <div className="text-muted flex flex-col gap-3 leading-loose">
+        <p>
+          Hello! I'm a developer based in San Francisco with over 4 years of
+          experience building for the web.
         </p>
-        <p className="text-muted leading-relaxed">
-          expedita amet, labore facilis optio quae explicabo, nisi reprehenderit
-          omnis molestias! Rem inventore consectetur cumque necessitatibus
-          laboriosam ullam. Rem numquam minima iusto. Atque molestias incidunt
+        <p>
+          With a background in composing music and sound for video games, I
+          bring a deep appreciation for creativity and design to my engineering
+          work. This perspective has helped me bridge the gap between
+          engineering, product, and design as I've had first-hand experience
+          wrestling with the kind of creativity that drives these roles.
         </p>
-        <p className="text-muted leading-relaxed">
-          repellat, omnis expedita officiis quisquam maxime totam? Rerum
-          mollitia minus fugiat illum quam nesciunt cumque distinctio quisquam,
-          incidunt, dolorem eum corrupti ut perspiciatis quod illo hic!
+        <p>
+          That said, I believe great design truly shines when paired with
+          robust, thoughtful engineering. When designing and architecting
+          systems and components, I always aim to create an intuitive and
+          extensible developer experience. My favorite work involves polished
+          interfaces that not only look and feel great for users, but are also
+          performant and enjoyable to work with under the hood.
         </p>
       </div>
     </Section>
