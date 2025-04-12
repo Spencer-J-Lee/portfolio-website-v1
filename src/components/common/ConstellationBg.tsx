@@ -9,16 +9,12 @@ import {
   OutMode,
 } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
-import { useAnimationDelay } from "../navbar/hooks";
 
 export const ConstellationBg = () => {
   const [init, setInit] = useState(false);
-  const { delay } = useAnimationDelay();
 
   // This should be run ONLY ONCE per application lifetime
   useEffect(() => {
-    if (delay.particles === undefined) return;
-
     // Delay setting this up to prevent performance hits during animations on initial page
     const id = setTimeout(() => {
       initParticlesEngine(async (engine) => {
@@ -26,10 +22,10 @@ export const ConstellationBg = () => {
       }).then(() => {
         setInit(true);
       });
-    }, delay.particles);
+    }, 2300);
 
     return () => clearTimeout(id);
-  }, [delay.particles]);
+  }, []);
 
   const particlesLoaded = async (container?: Container): Promise<void> => {
     console.log(container);

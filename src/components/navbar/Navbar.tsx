@@ -6,14 +6,13 @@ import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 import Link from "next/link";
 import { SECTIONS } from "@/constants/sections";
-import { useAnimationDelay } from "./hooks";
 import { AnchorButton } from "../common/buttons/AnchorButton";
+import { Fade } from "../common/fades/Fade";
 
 export const Navbar = () => {
   const [show, setShow] = useState(true);
   const [minify, setMinify] = useState(false);
   const prevPos = useRef(0);
-  const { delay, toMSStr } = useAnimationDelay();
 
   const handleScroll = () => {
     const currPos = window.scrollY;
@@ -49,7 +48,19 @@ export const Navbar = () => {
       )}
     >
       <nav className="flex items-center justify-between gap-10">
-        <Link
+        <Fade direction="down" index={1}>
+          <Link href={SECTIONS.HOME} className="block lg:p-2">
+            <Image
+              src="/assets/logo.png"
+              alt="Logo of initials SL"
+              style={{ objectFit: "contain" }}
+              width={40}
+              height={40}
+              priority
+            />
+          </Link>
+        </Fade>
+        {/* <Link
           href={SECTIONS.HOME}
           className="animate-fade-down opacity-0 lg:p-2"
           style={{ animationDelay: toMSStr(delay.nav[1]) }}
@@ -62,21 +73,19 @@ export const Navbar = () => {
             height={40}
             priority
           />
-        </Link>
+        </Link> */}
 
         <div className="flex gap-6">
           <ul className="hidden items-center justify-between gap-2 lg:flex">
-            <li
-              className="animate-fade-down opacity-0"
-              style={{ animationDelay: toMSStr(delay.nav[2]) }}
-            >
-              <NavbarLink id={SECTIONS.ABOUT}>About</NavbarLink>
+            <li>
+              <Fade direction="down" index={2}>
+                <NavbarLink id={SECTIONS.ABOUT}>About</NavbarLink>
+              </Fade>
             </li>
-            <li
-              className="animate-fade-down opacity-0"
-              style={{ animationDelay: toMSStr(delay.nav[3]) }}
-            >
-              <NavbarLink id={SECTIONS.EXPERIENCE}>Experience</NavbarLink>
+            <li>
+              <Fade direction="down" index={3}>
+                <NavbarLink id={SECTIONS.EXPERIENCE}>Experience</NavbarLink>
+              </Fade>
             </li>
             {/* <li
               className="animate-fade-down opacity-0"
@@ -86,16 +95,16 @@ export const Navbar = () => {
             </li> */}
           </ul>
 
-          <AnchorButton
-            className="animate-fade-down opacity-0"
-            style={{ animationDelay: toMSStr(delay.nav[4]) }}
-            size="sm"
-            href="/Spencer_Lee_Software_Engineer_Resume.pdf" // TODO Update this with new resume that has website link
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Resume
-          </AnchorButton>
+          <Fade direction="down" index={4}>
+            <AnchorButton
+              size="sm"
+              href="/Spencer_Lee_Software_Engineer_Resume.pdf" // TODO Update this with new resume that has website link
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </AnchorButton>
+          </Fade>
         </div>
       </nav>
     </header>
