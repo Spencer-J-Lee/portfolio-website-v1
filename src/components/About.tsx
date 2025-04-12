@@ -6,14 +6,14 @@ export const About = () => {
     <Section id={SECTIONS.ABOUT} title="About Me">
       <div className="text-muted flex flex-col gap-3 leading-loose">
         <p>
-          Hello! I'm a developer based in San Francisco with over 4 years of
+          Hello! {`I'm`} a developer based in San Francisco with over 4 years of
           experience building for the web.
         </p>
         <p>
           With a background in composing music and sound for video games, I
           bring a deep appreciation for creativity and design to my engineering
           work. This perspective has helped me bridge the gap between
-          engineering, product, and design as I've had first-hand experience
+          engineering, product, and design as {`I've`} had first-hand experience
           wrestling with the kind of creativity that drives these roles.
         </p>
         <p>

@@ -36,8 +36,8 @@ export const Hero = () => {
           className="text-muted animate-fade-up ml-0.5 mt-2.5 max-w-[510px] text-sm leading-loose opacity-0 md:mt-8 md:text-base"
           style={{ animationDelay: toMSStr(delay.hero[4]) }}
         >
-          I'm a software engineer who specializes in creating accessible,
-          pixel-perfect interfaces. I'm obsessed with craftsmanship, always
+          {`I'm`} a software engineer who specializes in creating accessible,
+          pixel-perfect interfaces. {`I'm`} obsessed with craftsmanship, always
           aiming for that perfect blend of performance, usability, and design.
         </p>
 
