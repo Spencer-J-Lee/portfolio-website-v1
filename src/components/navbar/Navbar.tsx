@@ -60,20 +60,6 @@ export const Navbar = () => {
             />
           </Link>
         </Fade>
-        {/* <Link
-          href={SECTIONS.HOME}
-          className="animate-fade-down opacity-0 lg:p-2"
-          style={{ animationDelay: toMSStr(delay.nav[1]) }}
-        >
-          <Image
-            src="/assets/logo.png"
-            alt="Logo of initials SL"
-            style={{ objectFit: "contain" }}
-            width={40}
-            height={40}
-            priority
-          />
-        </Link> */}
 
         <div className="flex gap-6">
           <ul className="hidden items-center justify-between gap-2 lg:flex">
