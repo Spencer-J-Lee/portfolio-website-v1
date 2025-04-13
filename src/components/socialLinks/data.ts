@@ -16,7 +16,7 @@ export const socialData = [
     icon: faLinkedin,
   },
   {
-    link: "https://www.codepen.io/MisterJibbs",
+    link: "https://codepen.io/MisterJibbs",
     ariaLabel: "CodePen Link",
     icon: faCodepen,
   },
