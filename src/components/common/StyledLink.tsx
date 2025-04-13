@@ -1,12 +1,9 @@
-import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
 import Link from "next/link";
 import type { ComponentPropsWithoutRef } from "react";
 
 type StyledLinkProps = ComponentPropsWithoutRef<typeof Link> & {
   external?: boolean;
-  showIcon?: boolean;
 };
 
 export const StyledLink = ({
@@ -14,7 +11,6 @@ export const StyledLink = ({
   className,
   children,
   external,
-  showIcon,
   ...props
 }: StyledLinkProps) => {
   const finalClassName = clsx(
@@ -32,12 +28,6 @@ export const StyledLink = ({
         {...props}
       >
         {children}
-
-        {showIcon && (
-          <span className="ml-3">
-            <FontAwesomeIcon icon={faUpRightFromSquare} size="xs" />
-          </span>
-        )}
       </a>
     );
   }

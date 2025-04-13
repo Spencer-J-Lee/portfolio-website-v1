@@ -21,7 +21,7 @@ export const HighlightBlock = ({
 }: HighlightBlockProps) => {
   return (
     <div className={clsx(className)}>
-      <StyledLink href={link} external showIcon>
+      <StyledLink href={link} external>
         {title}
         <span className="absolute -inset-4 hidden lg:block" />
       </StyledLink>

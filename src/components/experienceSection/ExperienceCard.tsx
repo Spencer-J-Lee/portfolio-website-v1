@@ -1,3 +1,5 @@
+import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ExperienceData } from "@/components/experienceSection/types";
 import { HighlightBlock } from "../common/infoCard/HighlightBlock";
 import { CardWrapper } from "../common/infoCard/CardWrapper";
@@ -17,7 +19,19 @@ export const ExperienceCard = ({ data }: ExperienceCardProps) => {
 
       <HighlightBlock
         className="z-10"
-        title={`${role} • ${company}`}
+        title={
+          <>
+            {role} • {company.split(" ").slice(0, -1).join(" ")}{" "}
+            <span className="inline-block">
+              {company.split(" ").slice(-1)}
+              <FontAwesomeIcon
+                icon={faUpRightFromSquare}
+                size="xs"
+                className="ml-2"
+              />
+            </span>
+          </>
+        }
         {...otherData}
       />
     </CardWrapper>
