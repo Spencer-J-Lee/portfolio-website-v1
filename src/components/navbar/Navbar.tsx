@@ -84,7 +84,7 @@ export const Navbar = () => {
           <Fade direction="down" index={4}>
             <AnchorButton
               size="sm"
-              href="/Spencer_Lee_Software_Engineer_Resume.pdf" // TODO Update this with new resume that has website link
+              href="/Spencer_Lee_Software_Engineer_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
