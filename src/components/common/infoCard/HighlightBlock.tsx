@@ -26,10 +26,10 @@ export const HighlightBlock = ({
         <span className="absolute -inset-4 hidden lg:block" />
       </StyledLink>
 
-      <p className="text-muted mt-2 text-sm leading-loose">{description}</p>
+      <p className="text-muted mt-2 text-sm leading-relaxed">{description}</p>
 
       {skills.length && (
-        <ul className="mt-4 flex flex-wrap gap-2.5">
+        <ul className="mt-4 flex flex-wrap gap-2">
           {skills.map((skill) => (
             <li key={skill}>
               <Pill text={skill} />

@@ -4,7 +4,7 @@ import { Section } from "./common/Section";
 export const About = () => {
   return (
     <Section id={SECTIONS.ABOUT} title="About Me">
-      <div className="text-muted flex flex-col gap-3 leading-loose">
+      <div className="text-muted flex flex-col gap-3 leading-relaxed">
         <p>
           Hello! {`I'm`} a developer based in San Francisco with over 4 years of
           experience building for the web.
