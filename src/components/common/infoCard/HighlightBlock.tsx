@@ -1,5 +1,5 @@
 import { Skill } from "@/components/experienceSection/constants";
-import { Pill } from "../Pill";
+import { Chip } from "../Chip";
 import { StyledLink } from "../StyledLink";
 import clsx from "clsx";
 import { ReactNode } from "react";
@@ -32,7 +32,7 @@ export const HighlightBlock = ({
         <ul className="mt-4 flex flex-wrap gap-2">
           {skills.map((skill) => (
             <li key={skill}>
-              <Pill text={skill} />
+              <Chip text={skill} />
             </li>
           ))}
         </ul>
