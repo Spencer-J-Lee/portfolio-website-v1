@@ -7,7 +7,6 @@ import { SkipToContent } from "@/components/common/SkipToContent";
 import { ConstellationBg } from "@/components/common/ConstellationBg";
 import { Footer } from "@/components/Footer";
 
-import "../styles/reset.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "../styles/globals.css";
 config.autoAddCss = false;
