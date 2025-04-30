@@ -1,5 +1,4 @@
 User-agent: *
 Disallow:
 
-// TODO add actual site url
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://www.spencerjlee.com/sitemap.xml
