@@ -1,6 +1,6 @@
 Name and Title
   Spencer Lee
-  Software Engineer
+  Frontend Engineer
 
 Links
   GitHub
@@ -14,7 +14,7 @@ About Me
   ...
 
 Experience
-  Software Engineer - Moov Technologies Inc.
+  Frontend Engineer - Moov Technologies Inc.
     2022-2024
     [
       "JavaScript",

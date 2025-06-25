@@ -29,7 +29,7 @@ export const Hero = () => {
 
         <Fade direction="up" index={13}>
           <p className="text-muted ml-0.5 mt-2.5 max-w-[510px] text-sm leading-relaxed md:mt-8 md:text-base">
-            {`I'm`} a software engineer who specializes in performant,
+            {`I'm`} a frontend engineer who specializes in performant,
             pixel-perfect interfaces. {`I'm`} obsessed with craftsmanship,
             always aiming for that perfect blend of performance, usability, and
             design.
