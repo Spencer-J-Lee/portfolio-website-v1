@@ -1,5 +1,6 @@
-import { SectionId } from "@/constants/sections";
 import { FC, ReactNode } from "react";
+
+import { SectionId } from "@/constants/sections";
 
 interface NavbarLinkProps {
   id: SectionId;

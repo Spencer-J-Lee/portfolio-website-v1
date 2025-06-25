@@ -1,14 +1,16 @@
 "use client";
 
-import Image from "next/image";
-import { NavbarLink } from "./NavbarLink";
 import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
+import Image from "next/image";
 import Link from "next/link";
+
+import { ASSET_PATHS } from "@/constants/assetPaths";
 import { SECTIONS } from "@/constants/sections";
+
+import { NavbarLink } from "./NavbarLink";
 import { AnchorButton } from "../common/buttons/AnchorButton";
 import { Fade } from "../common/fades/Fade";
-import { ASSET_PATHS } from "@/constants/assetPaths";
 
 export const Navbar = () => {
   const [show, setShow] = useState(true);

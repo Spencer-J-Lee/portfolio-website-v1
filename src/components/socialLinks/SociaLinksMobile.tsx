@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { socialData } from "./data";
 import { Fade } from "../common/fades/Fade";
 

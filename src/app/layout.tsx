@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import type { Metadata } from "next";
+
+import { ConstellationBg } from "@/components/common/ConstellationBg";
+import { SkipToContent } from "@/components/common/SkipToContent";
+import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/navbar/Navbar";
 import { SocialLinks } from "@/components/socialLinks/SocialLinks";
-import { inter, IBMPlexMono } from "@/styles/fonts";
-import { SkipToContent } from "@/components/common/SkipToContent";
-import { ConstellationBg } from "@/components/common/ConstellationBg";
-import { Footer } from "@/components/Footer";
+import { IBMPlexMono,inter } from "@/styles/fonts";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "../styles/globals.css";

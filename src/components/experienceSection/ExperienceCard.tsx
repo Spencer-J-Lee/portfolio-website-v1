@@ -1,8 +1,10 @@
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { ExperienceData } from "@/components/experienceSection/types";
-import { HighlightBlock } from "../common/infoCard/HighlightBlock";
+
 import { CardWrapper } from "../common/infoCard/CardWrapper";
+import { HighlightBlock } from "../common/infoCard/HighlightBlock";
 
 interface ExperienceCardProps {
   data: ExperienceData;

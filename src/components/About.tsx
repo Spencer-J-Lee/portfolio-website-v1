@@ -1,4 +1,5 @@
 import { SECTIONS } from "@/constants/sections";
+
 import { Section } from "./common/Section";
 
 export const About = () => {

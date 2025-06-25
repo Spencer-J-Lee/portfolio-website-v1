@@ -1,7 +1,8 @@
 import { AnchorHTMLAttributes, DetailedHTMLProps } from "react";
-import { ButtonSize } from "./types";
-import { useButtonClassname } from "./hooks";
 import clsx from "clsx";
+
+import { useButtonClassname } from "./hooks";
+import { ButtonSize } from "./types";
 
 interface AnchorButtonProps
   extends DetailedHTMLProps<

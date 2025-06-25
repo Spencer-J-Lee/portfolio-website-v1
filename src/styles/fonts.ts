@@ -1,4 +1,4 @@
-import { Inter, IBM_Plex_Mono } from "next/font/google";
+import { IBM_Plex_Mono,Inter } from "next/font/google";
 
 export const inter = Inter({
   subsets: ["latin"],

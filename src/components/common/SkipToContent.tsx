@@ -1,4 +1,5 @@
 import { SECTIONS } from "@/constants/sections";
+
 import { AnchorButton } from "./buttons/AnchorButton";
 
 export const SkipToContent = () => {

@@ -1,7 +1,8 @@
-import { Section } from "../common/Section";
-import { projectData } from "./data";
 import { SECTIONS } from "@/constants/sections";
+
+import { projectData } from "./data";
 import { ProjectCard } from "./ProjectCard";
+import { Section } from "../common/Section";
 
 export const Projects = () => {
   if (projectData.length === 0) {

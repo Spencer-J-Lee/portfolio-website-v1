@@ -1,7 +1,7 @@
 import {
+  faCodepen,
   faGithub,
   faLinkedin,
-  faCodepen,
 } from "@fortawesome/free-brands-svg-icons";
 
 export const socialData = [

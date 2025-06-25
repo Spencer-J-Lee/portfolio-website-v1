@@ -1,6 +1,7 @@
 import { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
-import { ButtonSize } from "./types";
+
 import { useButtonClassname } from "./hooks";
+import { ButtonSize } from "./types";
 
 interface ButtonProps
   extends DetailedHTMLProps<

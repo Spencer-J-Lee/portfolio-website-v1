@@ -1,7 +1,7 @@
 import { About } from "@/components/About";
 import { Experience } from "@/components/experienceSection/Experience";
-import { Projects } from "@/components/projectsSection/Projects";
 import { Hero } from "@/components/Hero";
+import { Projects } from "@/components/projectsSection/Projects";
 import { SECTIONS } from "@/constants/sections";
 
 export default function Home() {

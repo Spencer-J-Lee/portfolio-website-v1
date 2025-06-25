@@ -1,13 +1,13 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
 import {
   type Container,
   type ISourceOptions,
   MoveDirection,
   OutMode,
 } from "@tsparticles/engine";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
 export const ConstellationBg = () => {
@@ -15,7 +15,8 @@ export const ConstellationBg = () => {
 
   // This should be run ONLY ONCE per application lifetime
   useEffect(() => {
-    // Delay setting this up to prevent performance hits during animations on initial page
+    // Delay setup to prevent performance hits caused by
+    // animations on initial page render
     const id = setTimeout(() => {
       initParticlesEngine(async (engine) => {
         await loadSlim(engine);

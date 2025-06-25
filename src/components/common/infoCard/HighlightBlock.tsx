@@ -1,8 +1,10 @@
+import { ReactNode } from "react";
+import clsx from "clsx";
+
 import { Skill } from "@/components/experienceSection/constants";
+
 import { Chip } from "../Chip";
 import { StyledLink } from "../StyledLink";
-import clsx from "clsx";
-import { ReactNode } from "react";
 
 interface HighlightBlockProps {
   link: string;

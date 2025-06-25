@@ -1,4 +1,5 @@
 import { ASSET_PATHS } from "@/constants/assetPaths";
+
 import { ProjectData } from "./types";
 import { SKILLS } from "../experienceSection/constants";
 
