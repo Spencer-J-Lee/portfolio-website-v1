@@ -18,6 +18,11 @@ export const SKILLS = {
   METABASE: "Metabase",
   SASS: "SASS",
   STYLED_COMPONENTS: "Styled Components",
+  TS_PARTICLES: "tsParticles",
+  SUPABASE: "Supabase",
+  DRIZZLE: "Drizzle",
+  TIPTAP: "Tiptap",
+  TANSTACK_QUERY: "TanStack Query",
 } as const;
 export type Skill = (typeof SKILLS)[keyof typeof SKILLS];
 

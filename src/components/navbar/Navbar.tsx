@@ -8,6 +8,7 @@ import Link from "next/link";
 import { SECTIONS } from "@/constants/sections";
 import { AnchorButton } from "../common/buttons/AnchorButton";
 import { Fade } from "../common/fades/Fade";
+import { ASSET_PATHS } from "@/constants/assetPaths";
 
 export const Navbar = () => {
   const [show, setShow] = useState(true);
@@ -51,7 +52,7 @@ export const Navbar = () => {
         <Fade direction="down" index={1}>
           <Link href={SECTIONS.HOME} className="block lg:p-2">
             <Image
-              src="/assets/logo.png"
+              src={ASSET_PATHS.LOGO}
               alt="Logo of initials SL"
               style={{ objectFit: "contain" }}
               width={40}

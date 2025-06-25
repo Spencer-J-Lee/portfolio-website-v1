@@ -12,7 +12,7 @@ export const ExperienceCard = ({ data }: ExperienceCardProps) => {
   const { dateStr, role, company, ...otherData } = data;
 
   return (
-    <CardWrapper>
+    <CardWrapper variant="experience">
       <div className="text-muted/70 z-10 mt-0.5 text-xs font-medium tracking-wider lg:text-right lg:text-sm">
         {dateStr}
       </div>
