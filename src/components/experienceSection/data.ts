@@ -3,7 +3,7 @@ import { ExperienceData } from "./types";
 
 export const experienceData: ExperienceData[] = [
   {
-    role: "Software Engineer",
+    role: "Frontend Engineer",
     company: COMPANIES.MOOV,
     description:
       "Built and maintained critical features across the entire marketplace website including enhanced equipment search functionality, equipment management services, and reusable design systems. Integrated third-party APIs to track shipments, insights on user behavior, and real-time management of open positions.",
