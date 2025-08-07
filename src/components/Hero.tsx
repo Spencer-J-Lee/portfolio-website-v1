@@ -28,12 +28,12 @@ export const Hero = () => {
         </Fade>
 
         <Fade direction="up" index={13}>
-          <p className="text-muted ml-0.5 mt-2.5 max-w-[732px] text-sm leading-relaxed md:mt-8 md:text-base">
+          <p className="text-muted ml-0.5 mt-2.5 max-w-[680px] text-sm leading-relaxed md:mt-8 md:text-base">
             {`I'm`} a frontend engineer who specializes in developing
             performant, customer-centric features for web applications. {`I'm`}{" "}
-            obsessed with craftsmanship, always aiming for that perfect blend of
-            performance, usability, and design that not only delights users but
-            drives measurable business results.
+            always aiming for that perfect blend of performance, usability, and
+            design that not only delights users but drives measurable business
+            results.
           </p>
         </Fade>
 
