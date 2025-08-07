@@ -7,7 +7,7 @@ export const About = () => {
     <Section id={SECTIONS.ABOUT} title="About Me">
       <div className="text-muted flex flex-col gap-3 leading-relaxed">
         <p>
-          Hello! {`I'm`} a developer based in San Francisco with over 4 years of
+          Hello! {`I'm`} a developer based in San Francisco with 4+ years of
           experience building for the web.
         </p>
         <p>
@@ -19,11 +19,11 @@ export const About = () => {
         </p>
         <p>
           That said, I believe great design truly shines when paired with
-          robust, thoughtful engineering. When designing and architecting
-          systems and components, I always aim to create an intuitive and
-          extensible developer experience. My favorite work involves polished
-          interfaces that not only look and feel great for users, but are also
-          performant and enjoyable to work with under the hood.
+          robust, thoughtful engineering. When developing systems and
+          components, I always aim to create an intuitive and extensible
+          developer experience. My favorite work involves performant and
+          polished interfaces that delight users, drive measurable business
+          results, and are enjoyable to work with under the hood.
         </p>
       </div>
     </Section>

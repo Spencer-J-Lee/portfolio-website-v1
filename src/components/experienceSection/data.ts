@@ -6,7 +6,7 @@ export const experienceData: ExperienceData[] = [
     role: "Software Engineer",
     company: COMPANIES.MOOV,
     description:
-      "Built and maintained critical features across the entire marketplace website including enhanced equipment search functionality, equipment management services, and reuseable design systems. Integrated third-party APIs to track shipments, insights on user behavior, and real-time management of open positions.",
+      "Built and maintained critical features across the entire marketplace website including enhanced equipment search functionality, equipment management services, and reusable design systems. Integrated third-party APIs to track shipments, insights on user behavior, and real-time management of open positions.",
     dateStr: "2022 — 2024",
     link: "https://moov.co/search?search_flow_type=text",
     skills: [
