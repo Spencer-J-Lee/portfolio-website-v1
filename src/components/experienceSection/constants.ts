@@ -23,9 +23,12 @@ export const SKILLS = {
   DRIZZLE: "Drizzle",
   TIPTAP: "Tiptap",
   TANSTACK_QUERY: "TanStack Query",
+  THREEJS: "Three.js",
+  REACT_THREE_FIBER: "React Three Fiber",
 } as const;
 export type Skill = (typeof SKILLS)[keyof typeof SKILLS];
 
 export const COMPANIES = {
   MOOV: "Moov Technologies Inc.",
+  LUMAFIELD: "Lumafield",
 } as const;

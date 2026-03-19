@@ -4,6 +4,26 @@ import { ExperienceData } from "./types";
 export const experienceData: ExperienceData[] = [
   {
     role: "Frontend Engineer",
+    company: COMPANIES.LUMAFIELD,
+    description:
+      "Built and enhanced core features for a 3D modeling platform, including URL-driven dashboard state persistence for shareable, reproducible workflows and improved analytics tracking. Leveraged AI-assisted development tools to implement advanced visualization controls and modeling capabilities, and standardized frontend error handling patterns to improve debugging clarity and overall developer experience.",
+    dateStr: "2025 — 2026",
+    link: "https://voyager.lumafield.com/projects",
+    skills: [
+      SKILLS.JAVASCRIPT,
+      SKILLS.TYPESCRIPT,
+      SKILLS.REACT,
+      SKILLS.REDUX,
+      SKILLS.THREEJS,
+      SKILLS.REACT_THREE_FIBER,
+      SKILLS.JEST,
+      SKILLS.REACT_TESTING_LIBRARY,
+      SKILLS.STYLED_COMPONENTS,
+      SKILLS.MATERIAL_UI,
+    ],
+  },
+  {
+    role: "Frontend Engineer",
     company: COMPANIES.MOOV,
     description:
       "Built and maintained critical features across the entire marketplace website including enhanced equipment search functionality, equipment management services, and reusable design systems. Integrated third-party APIs to track shipments, insights on user behavior, and real-time management of open positions.",
