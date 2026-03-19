@@ -50,9 +50,9 @@ export const ConstellationBg = () => {
         modes: {
           connect: {
             distance: 100,
-            radius: 250,
+            radius: 200,
             links: {
-              opacity: 0.06,
+              opacity: 0.08,
             },
           },
         },
