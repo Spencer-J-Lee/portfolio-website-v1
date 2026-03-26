@@ -87,7 +87,7 @@ export const Navbar = () => {
           <Fade direction="down" index={4}>
             <AnchorButton
               size="sm"
-              href="/Spencer_Lee_Frontend_Engineer_Resume.pdf"
+              href="/Spencer-Lee-Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
