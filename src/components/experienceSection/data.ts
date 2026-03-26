@@ -16,6 +16,7 @@ export const experienceData: ExperienceData[] = [
       SKILLS.REDUX,
       SKILLS.THREEJS,
       SKILLS.REACT_THREE_FIBER,
+      SKILLS.PYTHON,
       SKILLS.JEST,
       SKILLS.REACT_TESTING_LIBRARY,
       SKILLS.STYLED_COMPONENTS,

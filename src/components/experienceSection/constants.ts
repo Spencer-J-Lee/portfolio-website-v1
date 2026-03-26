@@ -5,6 +5,7 @@ export const SKILLS = {
   NEXTJS: "Next.js",
   REDUX: "Redux",
   GOLANG: "Golang",
+  PYTHON: "Python",
   POSTGRESQL: "PostgreSQL",
   JEST: "Jest",
   REACT_TESTING_LIBRARY: "React Testing Library",
