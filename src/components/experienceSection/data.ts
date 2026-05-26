@@ -6,7 +6,7 @@ export const experienceData: ExperienceData[] = [
     role: "Frontend Engineer",
     company: COMPANIES.LUMAFIELD,
     description:
-      "Built and enhanced core features for a 3D modeling platform, including URL-driven dashboard state persistence for shareable, reproducible workflows and improved analytics tracking. Leveraged AI-assisted development tools to implement advanced visualization controls and modeling capabilities, and standardized frontend error handling patterns to improve debugging clarity and overall developer experience.",
+      "Enhanced core features for a 3D modeling platform, including URL-driven dashboard state persistence for shareable, reproducible workflows and improved analytics tracking. Leveraged AI-assisted development tools to implement advanced visualization controls and modeling capabilities, and standardized frontend error handling patterns to improve debugging clarity and overall developer experience.",
     dateStr: "2025 — 2026",
     link: "https://voyager.lumafield.com/projects",
     skills: [
